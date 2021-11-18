@@ -37,6 +37,9 @@ module.exports = {
                             plugins: [isDev && require.resolve('react-refresh/babel')].filter(Boolean),
                         },
                     },
+                    {
+                        loader: 'stylelint-custom-processor-loader'
+                    }
                 ],
             }
         ]
